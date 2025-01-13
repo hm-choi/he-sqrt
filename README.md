@@ -13,7 +13,7 @@ Hyunmin Choi<sup>1,2**</sup>.
 
 
 ## 1. Server Setting
-- In this evaluation, Macbook Pro is used.
+- In this evaluation, a Macbook Pro is used.
   - OS: macOS
   - RAM: 32GB
   - Core: Apple M1 Pro
@@ -27,13 +27,12 @@ Hyunmin Choi<sup>1,2**</sup>.
 ## 3. Setting
 
 ## 4. Run codes
+- The five examples are introduced in the following directory.
+```
+./example
+```
 
-## 4. Run codes
-- Run the Main server and three cluster servers.
-- Run the Client code.
-
-### How to use
-See README.md files in each directory for guides.
+The detailed explanation and how to run the example code is in the README.md in the example directory.
 
 ## License
-This is available for the non-commercial purpose only. 
+This is available for non-commercial purposes only. 

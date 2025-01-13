@@ -13,7 +13,7 @@ There are five example codes for the performance evaluation of CryptoRoot.
 - In this experiment, we evaluated the performance of two square root approximation methods, CryptoSqrt and a variation of CryptoInvSqrt, over the domain [0.001, 1000].
 
 ### Experiment 4: Evaluation in Various Domains of CryptoInvSqrt
-- To demonstrate that CryptoRoot guarantees consistent performance across various domains, we conducted experiments in three extreme domains: $$[10^{-4}, 10^{4}], [10^{−6}, 10^{2}]$$, and $$ [10^{-2}, 10^{6}].$$
+- To demonstrate that CryptoRoot guarantees consistent performance across various domains, we conducted experiments in three extreme domains: $$[10^{-4}, 10^{4}], [10^{−6}, 10^{2}]$$, and $$[10^{-2}, 10^{6}]$$.
 
 ### Experiment 5: Key and Ciphertext Storage Performance
 - In this experiment, we measure the size of the set of keys and ciphertext with $$N=2^{17}$$, and $$∆ = 40$$.
