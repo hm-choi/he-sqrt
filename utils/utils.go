@@ -2,7 +2,7 @@ package utils
 
 import "math"
 
-func CheckMAE(x []float64, input []float64, targets []float64, len int) (float64, float64, float64) {
+func CheckMAE(x []float64, input []float64, targets []float64, len int) (float64, float64) {
 	sum := 0.0
 	max := 0.0
 	elm := 0.0
@@ -10,15 +10,14 @@ func CheckMAE(x []float64, input []float64, targets []float64, len int) (float64
 		diff := math.Abs(x[i] - targets[i])
 		sum += diff
 		if diff > max {
-			max = diff
 			elm = input[i]
 		}
 	}
 	avg := sum / float64(len)
-	return elm, avg, max
+	return elm, avg
 }
 
-func CheckMRE(x []float64, input []float64, targets []float64, len int) (float64, float64, float64) {
+func CheckMRE(x []float64, input []float64, targets []float64, len int) (float64, float64) {
 	sum := 0.0
 	max := 0.0
 	elm := 0.0
@@ -31,7 +30,7 @@ func CheckMRE(x []float64, input []float64, targets []float64, len int) (float64
 		}
 	}
 	avg := sum / float64(len)
-	return elm, avg, max
+	return elm, avg
 }
 
 // Linspace generates a slice of n evenly spaced values between start and stop.
@@ -71,7 +70,7 @@ func stdDev(arr []float64) float64 {
 		return 0
 	}
 
-	m := mean(arr)
+	m := Mean(arr)
 	var sumSquares float64
 	for _, value := range arr {
 		diff := value - m

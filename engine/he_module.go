@@ -1,8 +1,6 @@
 package engine
 
 import (
-	"fmt"
-
 	"github.com/tuneinsight/lattigo/v6/core/rlwe"
 	"github.com/tuneinsight/lattigo/v6/schemes/ckks"
 )
@@ -41,10 +39,6 @@ func GetMudules(params ckks.Parameters) (*ckks.Encoder, *rlwe.Encryptor, *rlwe.D
 	}
 	eval = eval.WithKey(rlwe.NewMemEvaluationKeySet(rlk, kgen.GenGaloisKeysNew(galEls, sk)...))
 
-	fmt.Println("sk.BinarySize()", sk.BinarySize())
-	fmt.Println("pk.BinarySize()", pk.BinarySize())
-	fmt.Println("rlk.BinarySize()", rlk.BinarySize())
-	fmt.Println("gk", kgen.GenGaloisKeysNew(galEls, sk)[0].BinarySize())
 	return ecd, enc, dec, eval
 }
 
