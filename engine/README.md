@@ -12,5 +12,8 @@ The module provides the HE-based square root operation using our method: CryptoS
 ### he_module
 The module provides the basic parameters and modules for HE.  
 
+### newton_iteration
+The module provides the Newton-Rapshon's iteration method (Newton's method). 
+
 ### pivot_tangent
 The implementation of the architecture (Pivot-Tangent) in panda' et al.

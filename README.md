@@ -10,7 +10,10 @@ Hyunmin Choi<sup>1,2**</sup>.
 
 ** Corresponding author
 
-
+Any suggestions or errors for better research are always welcome. Please post them on Issue, and contact us anytime at one of the following e-mails for collaboration proposals, etc.
+- fieldmedalist@gmail.com
+- hyunmin.choi@g.skku.edu
+- hyunmin.choi@navercorp.com
 
 ## 1. Server Setting
 - In this evaluation, a Macbook Pro is used.
@@ -24,9 +27,7 @@ Hyunmin Choi<sup>1,2**</sup>.
 - Go: go1.23 or higher version
 - Lattigo V6 library (https://github.com/tuneinsight/lattigo)
 
-## 3. Setting
-
-## 4. Run codes
+## 3. Run codes
 - The five examples are introduced in the following directory.
 ```
 ./example
