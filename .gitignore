@@ -1,10 +1,2 @@
 .idea/
 .vscode/
-go.mod
-go.sum
-go.work
-go.work.sum
-examples/go.mod
-utils/go.mod
-engine/go.mod
-engine/go.sum
