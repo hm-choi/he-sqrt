@@ -56,12 +56,12 @@ The module provides the basic parameters and modules for HE.
 The module provides the Newton-Rapshon's iteration method (Newton's method). 
 
 - NewtonInvSqrt
- - Input
-  - x0: Initial number
-  - d: Iteration number
-  - y0: Initial point. If y is nil then y is set to 1.0
-- Output
-  - y: Result of approximation
+  - Input
+    - x0: Initial number
+    - d: Iteration number
+    - y0: Initial point. If y is nil then y is set to 1.0
+  - Output
+    - y: Result of approximation
 
 - HENewtonInvSqrt
   - Input
