@@ -40,14 +40,14 @@ MAE and MRE between $$Pivot-Tangent$$ and $$CryptoInvSqrt$$. Evaluation is condu
 
 MAE and MRE between $$CryptoSqrt$$ and variance of $$CryptoInvSqrt$$ on the domain $$[0.001, 1000]$$ with running times (seconds). The experimental result were measured when the ring degree is $$N=2^{17}$$ and the scale factor $$∆=40$$.
 
-|Degree|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
+|Algorithm|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
 |------|---|---|---|---|---|---|
 |$$CryptoSqrt$$|11|40|744|$$1.7779×10^{-4}$$|$$1.3008×10^{-4}$$|7.3074|
 |$$CryptoSqrt$$|12|40|784|$$4.5984×10^{-5}$$|$$2.3033×10^{-5}$$|13.1067|
 |$$CryptoSqrt$$|13|40|824|$$3.6760×10^{-5}$$|$$1.2880×10^{-5}$$|22.0763|
 |$$CryptoSqrt$$|14|40|864|$$3.5828×10^{-6}$$|$$1.2505×10^{-5}$$|47.7569|
 
-|Degree|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
+|Algorithm|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
 |------|---|---|---|---|---|---|
 |Variation of $$InvSqrt$$|19|40|1064|$$8.6697×10^{-3}$$|$$7.9648×10^{-4}$$|15.5055|
 |Variation of $$InvSqrt$$|20|40|1104|$$8.6695×10^{-3}$$|$$7.9648×10^{-4}$$|21.1236|
@@ -58,18 +58,18 @@ MAE and MRE between $$CryptoSqrt$$ and variance of $$CryptoInvSqrt$$ on the doma
 - To demonstrate that CryptoRoot guarantees consistent performance across various domains, we conducted experiments in three extreme domains: $$[10^{-4}, 10^{4}], [10^{−6}, 10^{2}]$$, and $$[10^{-2}, 10^{6}]$$.
 
 Performance of $$CryptoInvSqrt$$ on various domain.
-|Degree|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
+|Domain|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
 |------|---|---|---|---|---|---|
-|$$10^{-4}, 10^{4}$$|21|40|1144|$$4.6581×10^{-4}$$|$$4.6550×10^{-4}$$|50.5904|
-|$$10^{-6},10^{2}$$|21|40|1144|$$5.3503×10^{-2}$$|$$4.6753×10^{-4}$$|49.7820|
-|$$10^{-2},10^{6}$$|21|40|1144|$$4.6522×10^{-5}$$|$$2.0281×10^{-3}$$|49.1332|
+|$$[10^{-4}, 10^{4}]$$|21|40|1144|$$4.6581×10^{-4}$$|$$4.6550×10^{-4}$$|50.5904|
+|$$[10^{-6},10^{2}]$$|21|40|1144|$$5.3503×10^{-2}$$|$$4.6753×10^{-4}$$|49.7820|
+|$$[10^{-2},10^{6}]$$|21|40|1144|$$4.6522×10^{-5}$$|$$2.0281×10^{-3}$$|49.1332|
 
 ### Experiment 5: Key and Ciphertext Storage Performance
 - In this experiment, we measure the size of the set of keys and ciphertext with $$N=2^{17}$$, and $$∆ = 40$$.
 
 Size of secret key (SK), public key (PK), Relinearlization Key (RLK), Galois Key (GLK), and Ciphertext size (CTXT) with $$N=2^{17}$$ and $$∆=40$$.
 
-|Degree|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
+|Algorithm|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
 |------|---|---|---|---|---|---|
 |$$Pivot-Tangent$$|47|54.5264|109.0528 |1308.6334|1308.6334|100.6644|
 |$$CryptoRoot$$|19|24.1174|48.2349|241.1746|241.1746|39.8465|
