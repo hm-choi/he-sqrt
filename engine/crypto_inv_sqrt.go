@@ -12,44 +12,7 @@ import (
 	"github.com/tuneinsight/lattigo/v6/utils/bignum"
 )
 
-// COEFFLIST := [int]string{
-// 	9:"../coeffs/coeff_510.txt",
-// 	10:"../coeffs/coeff_1022.txt",
-// 	11:"../coeffs/coeff_2046.txt",
-// 	12:"../coeffs/coeff_4094.txt"
-// }
-
-// func LoadCoeff(depth int) {
-// 	coeffPath := COEFFLIST[depth]
-// 	bignum.
-
-// }
-
-// func F(x float64) (y float64) {
-// 	if x > -1.0 {
-// 		return 1 / (math.Sqrt(x + 1.0))
-// 	} else {
-// 		return 0
-// 	}
-// }
-
-// func F(x float64) (y float64) {
-// 	if x > -1.0 {
-// 		return 1 / math.Sqrt(500.0) / (math.Sqrt(x + 1.0))
-// 	} else {
-// 		return 0
-// 	}
-// }
-
-// func F2(x float64) (y float64) {
-// 	if x > -1.0 {
-// 		return 1 / (math.Sqrt(x + 1.0))
-// 	} else {
-// 		return 0
-// 	}
-// }
-
-func CryptoInvRoot(eval *ckks.Evaluator, params ckks.Parameters, ct *rlwe.Ciphertext, d int, A float64, B float64, types int) *rlwe.Ciphertext {
+func CryptoInvSqrt(eval *ckks.Evaluator, params ckks.Parameters, ct *rlwe.Ciphertext, d int, A float64, B float64, types int) *rlwe.Ciphertext {
 	x := ct.CopyNew()
 	F := func(x float64) (y float64) {
 		if x > -1.0 {

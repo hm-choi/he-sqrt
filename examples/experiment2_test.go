@@ -41,7 +41,7 @@ func experiment2() {
 		ecd, enc, dec, eval := engine.GetMudules(params)
 		x0 := engine.EnC(params, ecd, enc, values)
 		START_TIME := time.Now()
-		y0 := engine.CryptoInvRoot(eval, params, x0, d1, start, end, 1)
+		y0 := engine.CryptoInvSqrt(eval, params, x0, d1, start, end, 1)
 		invSqrts := engine.HENewtonInvSqrt(eval, x0, d2, y0)
 
 		fmt.Println("Time (CryptoInvSqrt): ", time.Since(START_TIME))
