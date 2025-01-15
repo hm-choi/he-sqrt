@@ -47,7 +47,7 @@ MAE and MRE between $$CryptoSqrt$$ and variance of $$CryptoInvSqrt$$ on the doma
 |$$CryptoSqrt$$|13|40|824|$$3.6760×10^{-5}$$|$$1.2880×10^{-5}$$|22.0763|
 |$$CryptoSqrt$$|14|40|864|$$3.5828×10^{-6}$$|$$1.2505×10^{-5}$$|47.7569|
 
-|Degree|depth|∆|log$$PQ$$|MAE|MRE|Time (s)|
+|Degree|depth|∆|log $$PQ$$|MAE|MRE|Time (s)|
 |------|---|---|---|---|---|---|
 |Variation of $$InvSqrt$$|19|40|1064|$$8.6697×10^{-3}$$|$$7.9648×10^{-4}$$|15.5055|
 |Variation of $$InvSqrt$$|20|40|1104|$$8.6695×10^{-3}$$|$$7.9648×10^{-4}$$|21.1236|
